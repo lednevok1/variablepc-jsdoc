@@ -1,0 +1,7 @@
+<?js
+	var data = obj;
+    var self = this;
+    data.forEach(function(name, i) { if (name.endsWith(">")) { name = name.slice(0, name.length-1); }; if (name != "Array" && name.startsWith("Array")) { name = name.replace("Array", "") + "[]" } ?>
+<span class="param-type"><?js= self.linkto(name.replace("Array.<", "").replace(">", "").replace(".<", "").replace("[]", ""), self.htmlsafe(name.split("#").at(-1))) ?></span>
+<?js if (i < data.length-1) { ?>|<?js } ?>
+<?js }); ?>
