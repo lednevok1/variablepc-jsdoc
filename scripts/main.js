@@ -1,5 +1,5 @@
 if ($('.page-title').data('filename').replace(/\.[a-z]+$/, '') == "index") { 
-    window.location.replace("https://lednevok1.github.io/variablepc-jsdoc/globals.html")  // read this = gay
+    window.location.replace("https://lednevok1.github.io/variablepc-jsdoc/global.html")  // read this = gay
 }
 
 $(function () {
