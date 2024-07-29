@@ -1715,7 +1715,7 @@
     </ul>
 </div>
     <div class="main">
-        <h1 class="page-title" data-filename="Packets_EntityEventPacket.html">Class: EntityEventPacket</h1>
+        <h1 class="page-title" data-filename="Command.html">Class: Command</h1>
         
 
 
@@ -1724,7 +1724,7 @@
     
 <header>
     <h2>
-    EntityEventPacket
+    Command
     </h2>
     
 </header>  
@@ -1737,9 +1737,9 @@
         
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="EntityEventPacket">
+        <h4 class="name" id="Command">
             
-            new EntityEventPacket<span class="signature">(entity_id, event, data)</span>
+            new Command<span class="signature">(command, description, usage, callbacks, aliases)</span>
         </h4>
     
         
@@ -1751,7 +1751,7 @@
     
     
     <div class="description">
-        пакетик
+        Cheat command
     </div>
     
 
@@ -1774,6 +1774,8 @@
 		
 		
 		
+		<th class="last">Description</th>
+        
 	</tr>
 	</thead>
 	
@@ -1782,13 +1784,36 @@
 	
         <tr>
             
-                <td class="name"><code>entity_id</code></td>
+                <td class="name"><code>command</code></td>
             
             
             <td class="type">
             
                 
-<span class="param-type">number</span>
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                (name)</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>description</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
 
 
             
@@ -1805,13 +1830,75 @@
 	
         <tr>
             
-                <td class="name"><code>event</code></td>
+                <td class="name"><code>usage</code></td>
             
             
             <td class="type">
             
                 
-<span class="param-type">number</span>
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                (syntax)</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>callbacks</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                
+                
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>onExecute</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Command.html#onExecute">onExecute</a></span>
 
 
             
@@ -1825,16 +1912,22 @@
         </tr>
 	
 	
+	</tbody>
+</table>
+            </td>
+        </tr>
+	
+	
 	
         <tr>
             
-                <td class="name"><code>data</code></td>
+                <td class="name"><code>aliases</code></td>
             
             
             <td class="type">
             
                 
-<span class="param-type">number</span>
+<span class="param-type">string[]</span>
 
 
             
@@ -1875,10 +1968,6 @@
     
 
     
-    <dd class="tag-sender">
-        <b>Relations</b>: Client -> Server; Server -> Client
-    </dd>
-    
 
     
     
@@ -1902,12 +1991,6 @@
     
     </div>
     
-    
-        <h3 class="subsection-title">Extends</h3>
-        
-        <ul>
-            <li><a href="Packets_Packet.html">Packet</a></li>
-        </ul>
     
     
     
@@ -1927,9 +2010,9 @@
             
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="getData">
+        <h4 class="name" id="execute">
             
-            getData<span class="signature">()</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{number}</span>
+            execute<span class="signature">(arguments)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{boolean}</span>
         </h4>
     
         
@@ -1939,6 +2022,155 @@
 </dt>
 <dd>
     
+    
+    <div class="description">
+        Executes command
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>arguments</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                </td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        boolean
+                        
+                    
+            </td>
+            <td class="description last">success</td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="getAliases">
+            
+            getAliases<span class="signature">()</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{string[]}</span>
+        </h4>
+    
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        Returns aliases
+    </div>
     
 
     
@@ -2004,11 +2236,11 @@
             
             <td class="type">
             
-                        number
+                        string[]
                         
                     
             </td>
-            <td class="description last">data</td>
+            <td class="description last">aliases</td>
         </tr>
     
     </tbody>
@@ -2023,9 +2255,9 @@
             
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="getEntityId">
+        <h4 class="name" id="getCommand">
             
-            getEntityId<span class="signature">()</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{number}</span>
+            getCommand<span class="signature">()</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{string}</span>
         </h4>
     
         
@@ -2035,6 +2267,10 @@
 </dt>
 <dd>
     
+    
+    <div class="description">
+        Returns command (name)
+    </div>
     
 
     
@@ -2100,11 +2336,11 @@
             
             <td class="type">
             
-                        number
+                        string
                         
                     
             </td>
-            <td class="description last">entity_id</td>
+            <td class="description last">command</td>
         </tr>
     
     </tbody>
@@ -2119,9 +2355,9 @@
             
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="getEvent">
+        <h4 class="name" id="getDescription">
             
-            getEvent<span class="signature">()</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{number}</span>
+            getDescription<span class="signature">()</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{string}</span>
         </h4>
     
         
@@ -2131,6 +2367,10 @@
 </dt>
 <dd>
     
+    
+    <div class="description">
+        Returns description
+    </div>
     
 
     
@@ -2196,11 +2436,11 @@
             
             <td class="type">
             
-                        number
+                        string
                         
                     
             </td>
-            <td class="description last">event</td>
+            <td class="description last">description</td>
         </tr>
     
     </tbody>
@@ -2215,9 +2455,9 @@
             
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="setData">
+        <h4 class="name" id="getUsage">
             
-            setData<span class="signature">(data)</span>
+            getUsage<span class="signature">()</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{string}</span>
         </h4>
     
         
@@ -2228,56 +2468,15 @@
 <dd>
     
     
+    <div class="description">
+        Returns syntax
+    </div>
+    
 
     
     
     
     
-    
-        
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>data</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-            
-            
-            
-            <td class="description last">
-                
-                </td>
-        </tr>
-	
-	
-	</tbody>
-</table>
     
     
     
@@ -2319,229 +2518,34 @@
     
     
     
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="setEntityId">
-            
-            setEntityId<span class="signature">(entity_id)</span>
-        </h4>
-    
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
+    <h5>Returns:</h5>
     
 
-    
-    
-    
-    
-    
-        
 
 <table class="params">
     <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
         <tr>
-            
-                <td class="name"><code>entity_id</code></td>
-            
             
             <td class="type">
             
-                
-<span class="param-type">number</span>
-
-
-            
+                        string
+                        
+                    
             </td>
-            
-            
-            
-            <td class="description last">
-                
-                </td>
+            <td class="description last">usage</td>
         </tr>
-	
-	
-	</tbody>
+    
+    </tbody>
 </table>
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="setEvent">
-            
-            setEvent<span class="signature">(event)</span>
-        </h4>
-    
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-        
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>event</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-            
-            
-            
-            <td class="description last">
-                
-                </td>
-        </tr>
-	
-	
-	</tbody>
-</table>
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
     
     
     
@@ -2550,6 +2554,124 @@
         </dl>
     
     
+    
+        <h3 class="subsection-title">Type Definitions</h3>
+        
+        <dl>
+                
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="onExecute">
+            
+            onExecute<span class="signature">(args)</span>
+        </h4>
+    
+        
+    </div>
+
+    
+    <p class="summary">Callback on execute</p>
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>args</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string[]</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                </td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+            </dl>
     
     
     

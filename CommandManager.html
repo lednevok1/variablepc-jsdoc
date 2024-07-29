@@ -1715,7 +1715,7 @@
     </ul>
 </div>
     <div class="main">
-        <h1 class="page-title" data-filename="Packets_EntityEventPacket.html">Class: EntityEventPacket</h1>
+        <h1 class="page-title" data-filename="CommandManager.html">Class: CommandManager</h1>
         
 
 
@@ -1724,7 +1724,7 @@
     
 <header>
     <h2>
-    EntityEventPacket
+    CommandManager
     </h2>
     
 </header>  
@@ -1737,9 +1737,9 @@
         
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="EntityEventPacket">
+        <h4 class="name" id="CommandManager">
             
-            new EntityEventPacket<span class="signature">(entity_id, event, data)</span>
+            CommandManager
         </h4>
     
         
@@ -1751,7 +1751,7 @@
     
     
     <div class="description">
-        пакетик
+        Cheat cmd manager
     </div>
     
 
@@ -1759,97 +1759,6 @@
     
     
     
-    
-        
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>entity_id</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-            
-            
-            
-            <td class="description last">
-                
-                </td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>event</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-            
-            
-            
-            <td class="description last">
-                
-                </td>
-        </tr>
-	
-	
-	
-        <tr>
-            
-                <td class="name"><code>data</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-            
-            
-            
-            <td class="description last">
-                
-                </td>
-        </tr>
-	
-	
-	</tbody>
-</table>
     
     
     
@@ -1875,10 +1784,6 @@
     
 
     
-    <dd class="tag-sender">
-        <b>Relations</b>: Client -> Server; Server -> Client
-    </dd>
-    
 
     
     
@@ -1902,12 +1807,6 @@
     
     </div>
     
-    
-        <h3 class="subsection-title">Extends</h3>
-        
-        <ul>
-            <li><a href="Packets_Packet.html">Packet</a></li>
-        </ul>
     
     
     
@@ -1927,9 +1826,9 @@
             
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="getData">
+        <h4 class="name" id=".addCommand">
             
-            getData<span class="signature">()</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{number}</span>
+            <span class="type-signature static">static</span>addCommand<span class="signature">(command)</span>
         </h4>
     
         
@@ -1940,293 +1839,9 @@
 <dd>
     
     
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Type</th>
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    
-        <tr>
-            
-            <td class="type">
-            
-                        number
-                        
-                    
-            </td>
-            <td class="description last">data</td>
-        </tr>
-    
-    </tbody>
-</table>
-
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="getEntityId">
-            
-            getEntityId<span class="signature">()</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{number}</span>
-        </h4>
-    
-        
+    <div class="description">
+        Registers a command
     </div>
-
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Type</th>
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    
-        <tr>
-            
-            <td class="type">
-            
-                        number
-                        
-                    
-            </td>
-            <td class="description last">entity_id</td>
-        </tr>
-    
-    </tbody>
-</table>
-
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="getEvent">
-            
-            getEvent<span class="signature">()</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{number}</span>
-        </h4>
-    
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Type</th>
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    
-        <tr>
-            
-            <td class="type">
-            
-                        number
-                        
-                    
-            </td>
-            <td class="description last">event</td>
-        </tr>
-    
-    </tbody>
-</table>
-
-    
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="setData">
-            
-            setData<span class="signature">(data)</span>
-        </h4>
-    
-        
-    </div>
-
-    
-</dt>
-<dd>
-    
     
 
     
@@ -2248,6 +1863,8 @@
 		
 		
 		
+		<th class="last">Description</th>
+        
 	</tr>
 	</thead>
 	
@@ -2256,13 +1873,13 @@
 	
         <tr>
             
-                <td class="name"><code>data</code></td>
+                <td class="name"><code>command</code></td>
             
             
             <td class="type">
             
                 
-<span class="param-type">number</span>
+<span class="param-type"><a href="Command.html">Command</a></span>
 
 
             
@@ -2272,7 +1889,7 @@
             
             <td class="description last">
                 
-                </td>
+                (only custom)</td>
         </tr>
 	
 	
@@ -2327,9 +1944,9 @@
             
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="setEntityId">
+        <h4 class="name" id=".execute">
             
-            setEntityId<span class="signature">(entity_id)</span>
+            <span class="type-signature static">static</span>execute<span class="signature">(command)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{boolean}</span>
         </h4>
     
         
@@ -2339,6 +1956,10 @@
 </dt>
 <dd>
     
+    
+    <div class="description">
+        Executes a command
+    </div>
     
 
     
@@ -2360,6 +1981,8 @@
 		
 		
 		
+		<th class="last">Description</th>
+        
 	</tr>
 	</thead>
 	
@@ -2368,13 +1991,13 @@
 	
         <tr>
             
-                <td class="name"><code>entity_id</code></td>
+                <td class="name"><code>command</code></td>
             
             
             <td class="type">
             
                 
-<span class="param-type">number</span>
+<span class="param-type">string</span>
 
 
             
@@ -2384,7 +2007,7 @@
             
             <td class="description last">
                 
-                </td>
+                (+args)</td>
         </tr>
 	
 	
@@ -2431,6 +2054,35 @@
     
     
     
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        boolean
+                        
+                    
+            </td>
+            <td class="description last">success</td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
     
     
 </dd>
@@ -2439,9 +2091,9 @@
             
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id="setEvent">
+        <h4 class="name" id=".getCommand">
             
-            setEvent<span class="signature">(event)</span>
+            <span class="type-signature static">static</span>getCommand<span class="signature">(command)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{<a href="Command.html">Command</a>|null}</span>
         </h4>
     
         
@@ -2451,6 +2103,10 @@
 </dt>
 <dd>
     
+    
+    <div class="description">
+        Fetches a command
+    </div>
     
 
     
@@ -2472,6 +2128,8 @@
 		
 		
 		
+		<th class="last">Description</th>
+        
 	</tr>
 	</thead>
 	
@@ -2480,13 +2138,13 @@
 	
         <tr>
             
-                <td class="name"><code>event</code></td>
+                <td class="name"><code>command</code></td>
             
             
             <td class="type">
             
                 
-<span class="param-type">number</span>
+<span class="param-type">string</span>
 
 
             
@@ -2496,7 +2154,357 @@
             
             <td class="description last">
                 
-                </td>
+                (name)</td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        <a href="Command.html">Command</a>
+                         | 
+                    
+                        null
+                        
+                    
+            </td>
+            <td class="description last">command</td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id=".getCommands">
+            
+            <span class="type-signature static">static</span>getCommands<span class="signature">()</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{<a href="Command.html">Command</a>[]}</span>
+        </h4>
+    
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        Returns all commands
+    </div>
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        Command[]
+                        
+                    
+            </td>
+            <td class="description last">commands</td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id=".getPrefix">
+            
+            <span class="type-signature static">static</span>getPrefix<span class="signature">()</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{string}</span>
+        </h4>
+    
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        Returns prefix
+    </div>
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        string
+                        
+                    
+            </td>
+            <td class="description last">prefix</td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id=".removeCommand">
+            
+            <span class="type-signature static">static</span>removeCommand<span class="signature">(command)</span>
+        </h4>
+    
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        Unregisters a command
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		<th class="last">Description</th>
+        
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>command</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Command.html">Command</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                (only custom)</td>
         </tr>
 	
 	
